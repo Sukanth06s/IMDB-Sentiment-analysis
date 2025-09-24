@@ -5,12 +5,9 @@ I used **Logistic Regression** and **Linear SVM** to classify reviews as positiv
 
 
 ### 1. Preprocessing ( getting the data ready for the Model)
-- The dataset contains raw IMDB reviews with a sentiment label (positive / negative).
-- Before using it for training, I cleaned the reviews:
-  - Converted all text to lowercase (so “Movie” and “movie” are treated the same)
-  - Removed numbers, punctuation, and special characters using regex
-  - Kept only alphabetic words
-- This makes the input consistent and reduces noise, so the model focuses only on meaningful words.
+-The dataset has reviews in sentence format, so before using that I need to make sure to remove all the unnecessary stuff like special charcters, numbers, commas and stuff. 
+ so that it will be easier
+
 
 ### 2. Feature Extraction (TF-IDF)
 - After cleaning, the text is converted into numerical vectors (ML models can only read numbers).
